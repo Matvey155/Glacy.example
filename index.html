@@ -9,6 +9,7 @@
 </head>
 
 <body>
+
   <header class="header">
     <div class="header__inner container">
       <a class="header__logo logo" href="/">
@@ -94,22 +95,130 @@
     </div>
   </header>
   <section class="slider">
-    <div class="slider__left">
-      <h1 class="slider__title">Нежный пломбир с клубничным джемом</h1>
-      <p class="slider__text">Натуральное мороженое из свежих сливок
-        и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>  
-    <button class="slider__button">Заказать</button>
+    <div class="slider__inner container">
+      <div class="slider__info">
+        <h2 class="slider__title">Нежный пломбир с клубничным джемом</h2>
+        <div class="slider__text">
+          <p>Натуральное мороженое из свежих сливок и молока с вкуснейшим клубничным джемом – это идеальный десерт для
+            всей семьи.</p>
+        </div>
+        <button class="slider__button button button--white" type="button">Заказать</button>
       </div>
-    <div class="slider__right">
-      <div class="slider__mainImage">
-        <img src="./images/iceCreme.png" alt="Мороженое"/>
+      <div class="slider__main">
+        <button class="slider__navigation-button slider__navigation-button--prev" type="button">
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M9.71044 13.1352C9.97014 13.3949 10.3912 13.3949 10.6509 13.1352C10.9106 12.8755 10.9106 12.4545 10.6509 12.1948L6.44961 7.99351L10.6509 3.79219C10.9106 3.53249 10.9106 3.11144 10.6509 2.85174C10.3912 2.59204 9.97017 2.59204 9.71048 2.85174L5.04176 7.52045C5.04081 7.52139 5.03987 7.52233 5.03892 7.52328C4.77922 7.78298 4.77922 8.20403 5.03892 8.46373L9.71044 13.1352Z"
+              fill="#FCFCFC" />
+          </svg>
+        </button>
+        <div class="slider__image-wrapper">
+          <img class="slider__main-image" src="./images/iceCreme.png" alt="Мороженое" width="329" height="507"
+            loading="lazy" />
+        </div>
+        <button class="slider__navigation-button slider__navigation-button--next" type="button">
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g id="Arrow-right">
+              <path id="Union" fill-rule="evenodd" clip-rule="evenodd"
+                d="M7.28956 2.86476C7.02986 2.60506 6.60881 2.60506 6.34911 2.86476C6.08941 3.12446 6.08941 3.54551 6.34911 3.80521L10.5504 8.00649L6.34907 12.2078C6.08937 12.4675 6.08937 12.8886 6.34907 13.1483C6.60877 13.408 7.02982 13.408 7.28952 13.1483L11.9582 8.47955C11.9592 8.47861 11.9601 8.47767 11.9611 8.47672C12.2208 8.21702 12.2208 7.79597 11.9611 7.53627L7.28956 2.86476Z"
+                fill="#FCFCFC" />
+            </g>
+          </svg>
+        </button>
       </div>
-      <div class="slider__blockImages">
-        <img src="./images/iceCreme.png" alt="Мороженое"/>
-        <img src="./images/iceCreme.png" alt="Мороженое"/>
+      <div class="slider__extra">
+        <div class="slider__image-wrapper">
+          <img class="slider__extra-image" src="./images/iceCreme.png" alt="Мороженое" width="66" height="150"
+            loading="lazy" />
+        </div>
+        <div class="slider__image-wrapper">
+          <img class="slider__extra-image" src="./images/iceCreme.png" alt="Мороженое" width="66" height="150"
+            loading="lazy" />
+        </div>
       </div>
     </div>
-    </section>
+  </section>
+  <div class="ad__bunner container">
+    <h2 class="ad__section-h2">Заказывайте мороженое и получайте подарки!</h2>
+    <div class="ad__banners">
+      <div class="first__banner banner">
+        <div class="ad__banner-about">
+          <h3>Малинка даром!</h3>
+          <p class="ad__main-p">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового
+            варенья бесплатно.
+          </p>
+          <button class="ad__button button--white">Хочу подарок</button>
+        </div>
+        <img src="./images/raspberry.png" alt="raspberry">
+      </div>
+      <div class="second__banner banner">
+        <div class="ad__banner-about">
+          <h3>Маршмеллоу даром!</h3>
+          <p class="ad__main-p">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных <br> зефирок совершенно
+            бесплатно.</p>
+          <button class="ad__button main--white">Хочу подарок</button>
+        </div>
+        <img src="./images/marshmellow.png" alt="raspberry">
+      </div>
+    </div>
+  </div>
+  <section class="goods__section">
+    <div class="goods__inner container">
+      <h2 class="goods__section-h2">Попробуйте самые популярные вкусы нашего мороженого</h2>
+      <ul class="goods__list">
+        <li class="goods__list-item">
+          <img class="goods__item-image" src="./images/raspberry ice-cream.png" alt="raspberry ice-cream" width="168">
+          <div class="goods__about">
+            <h4 class="goods__name">Малинка</h4>
+            <p class="goods__description">Сливочное мороженое с малиновым джемом</p>
+            <div class="to__buy-block">
+              <div class="item__price">310 ₽/кг</div>
+              <button class="add__to-storage-button red-button"><img src="src/images/white-storage.svg"
+                  alt="white storage" width="16" height="16"></button>
+            </div>
+          </div>
+        </li>
+        <li class="goods__list-item">
+          <img class="goods__item-image" src="./images/phistashka ice-cream.png" alt="phistashka ice-cream" width="168">
+          <div class="goods__about">
+            <h4 class="goods__name">Фисташка</h4>
+            <p class="goods__description">Фисташковый пломбир с кусочками шоколада</p>
+            <div class="to-buy__block">
+              <div class="item__price">340 ₽/кг</div>
+              <button class="add__to-storage-button red-button"><img src="src/images/white-storage.svg"
+                  alt="white storage" width="16" height="16"></button>
+            </div>
+          </div>
+        </li>
+        <li class="goods__list-item">
+          <img class="goods__item-image" src="./images/blueberry ice-cream.png" alt="blueberry ice-cream" width="168">
+          <div class="goods__about">
+            <h4 class="goods__name">Черника</h4>
+            <p class="goods__description">Крем-брюле с черничным джемом</p>
+            <div class="to__buy-block">
+              <div class="item__price">330 ₽/кг</div>
+              <button class="add__to-storage-button red-button"><img src="src/images/white-storage.svg"
+                  alt="white storage" width="16" height="16">
+              </button>
+            </div>
+          </div>
+        </li>
+        <li class="goods__list-item">
+          <img class="goods__item-image" src="./images/bable gum ice-cream.png" alt="bable gum ice-cream" width="168">
+          <div class="goods__about">
+            <h4 class="goods__name">Бабл-гам</h4>
+            <p class="goods__description">Ванильный пломбир со сладкой посыпкой</p>
+            <div class="to__buy-block">
+              <div class="item__price">320 ₽/кг</div>
+              <button class="add__to-storage-button red-button"><img src="src/images/white-storage.svg"
+                  alt="white storage" width="16" height="16"></button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
 </body>
 
 </html>
