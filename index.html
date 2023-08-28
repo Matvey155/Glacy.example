@@ -276,8 +276,8 @@
       </div>
     </section>
 
-    <section class="info-banner">
-      <div class="info-banner__inner container">
+    <section class="info-banner container">
+      <div class="info-banner__inner">
         <div class="info-banner__body">
           <h2 class="info-banner__title section-title">
             Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес
@@ -288,7 +288,7 @@
                 <img class="info-banner__item-image" src="./images/ice-cream.svg" alt="" width="32" height="32"
                   loading="lazy" />
               </div>
-              <div class="info-banner__item-description">
+              <div class="info-banner__item-description gray-dark-text-color">
                 <p>Всё наше мороженое изготавливается на собственном производстве с использованием современного
                   оборудования и проверенных временем технологий.</p>
               </div>
@@ -299,7 +299,7 @@
                 <img class="info-banner__item-image" src="./images/cow.svg" alt="" width="32" height="32"
                   loading="lazy" />
               </div>
-              <div class="info-banner__item-description">
+              <div class="info-banner__item-description gray-dark-text-color">
                 <p>Закупка ингредиентов производится только
                   у проверенных фермерских хозяйств, с которыми
                   нас связывает долговременное сотрудничество.</p>
@@ -311,7 +311,7 @@
                 <img class="info-banner__item-image" src="./images/leaf.svg" alt="" width="32" height="32"
                   loading="lazy" />
               </div>
-              <div class="info-banner__item-description">
+              <div class="info-banner__item-description gray-dark-text-color">
                 <p>Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты и
                   добавки произведены из натурального сырья.</p>
               </div>
@@ -322,7 +322,7 @@
                 <img class="info-banner__item-image" src="./images/thermometer.png" alt="" width="32" height="32"
                   loading="lazy" />
               </div>
-              <div class="info-banner__item-description">
+              <div class="info-banner__item-description gray-dark-text-color">
                 <p>Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому
                   растаять и позволяет сохранить превосходный вкус.</p>
               </div>
@@ -340,27 +340,214 @@
         </div>
         <div class="subscribe-banner">
           <div class="subscribe-banner__body">
-            Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит.
-            Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+            <div class="subscribe-banner__description gray-dark-text-color">
+              Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит.
+              Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
+            </div>
+            <form class="subscribe__block">
+              <input class="subscribe-banner__input input" type="email" placeholder="email@example.com">
+              <button class="subscribe-banner__button button" type="submit">Отправить</button>
+            </form>
           </div>
-          <div class="subscribe__block">
-            <input type="email" placeholder="email@example.com" class="subscribe-banner__input">
-            <button class="subscribe-banner__button">Отправить</button>
-          </div>
+        </div>
+      </div>
     </section>
 
-    <div class="delivery__container">
-      <a name="delivery__info"></a>
-      <div class="delivery__info">
-        <h2 class="delivery__info title">Доставка любимого мороженого на дом</h2>
-        <p class="delivery__info p">Хочется полакомиться любимым десертом, <br> но нет времени съездить в магазин?
-          Закажите
-          доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-      </div>
-    </div>
+    <section class="delivery container">
+      <div class="delivery__inner">
+        <div class="delivery__info">
+          <h2 class="delivery__title title">Доставка любимого мороженого на дом</h2>
+          <div class="delivery__description gray-dark-text-color">
+            <p>Хочется полакомиться любимым десертом,  но нет времени съездить в магазин? Закажите доставку мороженого
+              на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
+          </div>
+        </div>
 
+        <form class="delivery-form">
+          <header class="delivery-form__header">
+            <div class="delivery-form__info">
+              Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.
+            </div>
+          </header>
+          <div class="delivery-form__body">
+            <div class="delivery-form__item">
+              <div class="form-item">
+                <label class="form-item__label" for="date">Дата</label>
+                <div class="form-item__tooltip tooltip">
+                  <div class="tooltip__trigger">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Info" clip-path="url(#clip0_28690_1768)">
+                        <path id="Union" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z"
+                          fill="#2D3440" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_28690_1768">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="tooltip__body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, officiis.
+                  </div>
+                </div>
+                <input class="form-item__input input" id="date" name="date" placeholder="01.04.2020" />
+              </div>
+            </div>
+
+            <div class="delivery-form__item">
+              <div class="form-item">
+                <label class="form-item__label" for="tel">Телефон</label>
+                <div class="form-item__tooltip tooltip">
+                  <div class="tooltip__trigger">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Info" clip-path="url(#clip0_28690_1768)">
+                        <path id="Union" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z"
+                          fill="#2D3440" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_28690_1768">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="tooltip__body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, officiis.
+                  </div>
+                </div>
+                <input class="form-item__input input" id="tel" name="tel" type="tel" placeholder="+7 999-00-00" />
+              </div>
+            </div>
+
+            <div class="delivery-form__item delivery-form__item--wide">
+              <div class="form-item">
+                <label class="form-item__label" for="date">Адрес</label>
+                <div class="form-item__tooltip tooltip">
+                  <div class="tooltip__trigger">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g id="Info" clip-path="url(#clip0_28690_1768)">
+                        <path id="Union" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.00026 2.12508C4.30774 2.12508 2.12502 4.3078 2.12502 7.00032C2.12502 9.69284 4.30774 11.8756 7.00026 11.8756C9.69278 11.8756 11.8755 9.69284 11.8755 7.00032C11.8755 4.3078 9.69278 2.12508 7.00026 2.12508ZM0.791687 7.00032C0.791687 3.57142 3.57136 0.791748 7.00026 0.791748C10.4292 0.791748 13.2088 3.57142 13.2088 7.00032C13.2088 10.4292 10.4292 13.2089 7.00026 13.2089C3.57136 13.2089 0.791687 10.4292 0.791687 7.00032ZM7.00007 6.3334C7.36826 6.3334 7.66674 6.63188 7.66674 7.00007V9.21683C7.66674 9.58502 7.36826 9.8835 7.00007 9.8835C6.63188 9.8835 6.33341 9.58502 6.33341 9.21683V7.00007C6.33341 6.63188 6.63188 6.3334 7.00007 6.3334ZM7.00007 4.11665C6.63188 4.11665 6.33341 4.41513 6.33341 4.78332C6.33341 5.1515 6.63188 5.44998 7.00007 5.44998H7.0059C7.37409 5.44998 7.67257 5.1515 7.67257 4.78332C7.67257 4.41513 7.37409 4.11665 7.0059 4.11665H7.00007Z"
+                          fill="#2D3440" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_28690_1768">
+                          <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <div class="tooltip__body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, officiis.
+                  </div>
+                </div>
+                <input class="form-item__input input" id="address" name="address"
+                  placeholder="ул. Большая Конюшенная, 19/8" />
+                  <button class="delivery__button button">Отправить</button>
+              </div>
+              <div>
+              </div>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+    <section class="feedback container">
+      <div class="feedback__inner">
+        <div class="feedback__body">
+          <div class="feedback__contacts">
+            <div class="feedback__contacts-item">
+              <div class="feedback__contacts-label gray-dark-text-color">Адрес главного офиса и офлайн-магазина:</div>
+              <a class="feedback__contacts-link" href="https://yandex.ru/maps/-/CDQaZN-r" target="_blank">наб. реки
+                Карповки,  5 лит П, Санкт-Петербург</a>
+            </div>
+            <div class="feedback__contacts-item">
+              <div class="feedback__contacts-label gray-dark-text-color">Для заказов по телефону:</div>
+              <div class="feedback__contacts-value">
+                <a class="feedback__contacts-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+                <div class="feedback__contacts-hint gray-dark-text-color">(с 10 до 20 ежедневно)</div>
+              </div>
+            </div>
+          </div>
+          <button class="feedback__open-form-button button" type="button" data-js-open-modal-button="#feedback-modal">
+            Форма обратной связи
+          </button>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <footer class="footer">
+    <div class="footer__inner container">
+      <ul class="socials__list">
+        <li class="socials__list item">
+          <a class="link" href="/" target="_blank" aria-label="TG">
+            <img class="telegram__logo-image" src="./images/TG-logo.svg" alt="telegram logo">
+          </a>
+        </li>
+        <li class="socials__list item">
+          <a class="link" href="/" target="_blank" aria-label="VK">
+            <img class="vk__logo-image" src="./images/VK-logo.svg" alt="vk logo">                                 
+          </a>
+        </li>
+        <li class="socials__list item">
+          <a class="link" href="/" target="_blank" aria-label="YT">
+            <img class="yt__logo-image" src="./images/YT-logo.svg" alt="yt logo">                                     
+          </a>
+        </li>
+      </ul>
+      <ul class="footer__menu-list">
+        <li class="footer__menu-item">
+          <a href="#" class="link__current-link">
+            <img class="heartfill__image" src="./images/Heart-fill.svg" alt="heartfill image" width="16" height="16">
+            Для поставщиков
+          </a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="link">
+            О производстве
+          </a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="link">
+            Наши документы
+          </a>
+        </li>
+        <li class="footer__menu-item">
+          <a href="#" class="link">
+            Экологические стандарты
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <div class="modal" id="feedback-modal" data-js-modal>
+    <div class="modal__body">
+      <button class="modal__close-button" type="button">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="Cross">
+            <path id="Union" fill-rule="evenodd" clip-rule="evenodd"
+              d="M15.8858 5.05482C16.1461 4.79447 16.1461 4.37236 15.8858 4.11201C15.6254 3.85166 15.2033 3.85166 14.943 4.11201L9.99877 9.0562L5.05458 4.11201C4.79423 3.85166 4.37212 3.85166 4.11177 4.11201C3.85142 4.37236 3.85142 4.79447 4.11177 5.05482L9.05596 9.99901L4.11177 14.9432C3.85142 15.2036 3.85142 15.6257 4.11177 15.886C4.37212 16.1464 4.79423 16.1464 5.05458 15.886L9.99877 10.9418L14.943 15.886C15.2033 16.1464 15.6254 16.1464 15.8858 15.886C16.1461 15.6257 16.1461 15.2036 15.8858 14.9432L10.9416 9.99901L15.8858 5.05482Z"
+              fill="#2D3440" />
+          </g>
+        </svg>
+      </button>
+      <h3 class="modal__title">Мы обязательно ответим вам!</h3>
+      <div class="modal__content">
+        <form class="feedback-form">
+          ...
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
